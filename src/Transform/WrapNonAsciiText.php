@@ -36,7 +36,6 @@ class WrapNonAsciiText {
         $statementPreservingTraverser->addVisitor(new CloningVisitor());
 
         $oldStatements = $parser->parse(file_get_contents($this->splInfo));
-        // echo (new NodeDumper())->dump($oldStatements) . PHP_EOL;
 
         $newStatements = $statementPreservingTraverser->traverse($oldStatements);
 

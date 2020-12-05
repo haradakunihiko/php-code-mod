@@ -1,5 +1,4 @@
 <?php
-
 require_once "vendor/autoload.php";
 require_once "Transform/WrapNonAsciiText.php";
 require_once "Visitor/WrapNonAsciiTextVisitor.php";
@@ -7,8 +6,6 @@ require_once "Visitor/WrapNonAsciiTextVisitor.php";
 use PHPCodeMod\Transform\WrapNonAsciiText;
 use PhpParser\Lexer\Emulative;
 use PhpParser\NodeDumper;
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitor\CloningVisitor;
 use PhpParser\Parser\Php7;
 
 function wrapNonAsciiText(string $dir, bool $dryRun)
